@@ -24,9 +24,9 @@
 ```sh
 http://lument.localhost.app/
 ```
-- Run: 
+- Create dummy user: 
 ```sh
-php artisan db:seed to create new user
+php artisan db:seed 
 ```
 
 - Show new user created: 
