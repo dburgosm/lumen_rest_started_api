@@ -12,7 +12,7 @@
 <VirtualHost *:80>
   ServerName lumen.localhost.app
   DocumentRoot "your_path/public"
-  <Directory "yout_path/public">
+  <Directory "your_path/public">
     AllowOverride all
   </Directory>
   ErrorLog "/var/log/apache2/lumen-error_log"
