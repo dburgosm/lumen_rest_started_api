@@ -13,7 +13,7 @@ class UserController extends Controller
 	    'email' => 'required|email|unique:users',
 	    'password' => 'required'
 	];
-
+	
 	public function index()
 	{
 		return $this->sendResponse(User::all(), 200);
@@ -48,7 +48,7 @@ class UserController extends Controller
     	if($data != null){
     		$data->title = $request->get('name');
     		$data->description = $request->get('email');
-    		$data->datetime = $request->get('password');
+    		$data->password = $request->get('password');
     		$data->save();
     		$code = 200;
     	}
