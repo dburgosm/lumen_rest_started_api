@@ -6,7 +6,7 @@
 - https://secure.php.net/manual/en/mongodb.installation.php
 
 
-#Configure Virtual Host Apache:
+#Configure VirtualHost Apache:
 
 ```html
 <VirtualHost *:80>
@@ -19,6 +19,13 @@
   CustomLog "/var/log/apache2/lumen-access_log" common
 </VirtualHost>
 ```
+
+#.ENV
+
+- APP_DEBUG:
+	-TRUE: Error and Exception return in HTML with trace
+	-FALSE: Error and Exception return in JSON
+
 #Example:
 - Lumen version:
 ```sh
