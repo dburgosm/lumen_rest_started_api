@@ -43,7 +43,7 @@ http://lument.localhost.app/user
 		"data":[{
 			"_id":"56f6edc525a53beb656ef9f1",
 			"name":"David Burgos M",
-			"email":"dburgosm@gmail.com"
+			"email":"dburgosm@test.com"
 		}]
 	}
 ```
