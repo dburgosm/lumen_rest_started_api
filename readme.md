@@ -8,6 +8,7 @@
 
 #Configure Virtual Host Apache:
 
+```html
 <VirtualHost *:80>
   ServerName lumen.localhost.app
   DocumentRoot "your_path/public"
@@ -17,12 +18,23 @@
   ErrorLog "/var/log/apache2/lumen-error_log"
   CustomLog "/var/log/apache2/lumen-access_log" common
 </VirtualHost>
-
+```
 #Example:
-- Lumen version: http://lument.localhost.app/
-- Run php artisan db:seed to create new user
-- Show new user created http://lument.localhost.app/user
-- JSON response: 
+- Lumen version:
+```sh
+http://lument.localhost.app/
+```
+- Run: 
+```sh
+php artisan db:seed to create new user
+```
+
+- Show new user created: 
+```sh
+http://lument.localhost.app/user
+```
+- JSON response:
+```json
 
 	{
 		"success":true,
@@ -34,3 +46,4 @@
 			"email":"dburgosm@gmail.com"
 		}]
 	}
+```
