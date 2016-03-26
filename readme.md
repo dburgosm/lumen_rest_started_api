@@ -22,9 +22,9 @@
 
 #.ENV
 
-- APP_DEBUG:
-	-TRUE: Error and Exception return in HTML with trace
-	-FALSE: Error and Exception return in JSON
+- APP_DEBUG
+> TRUE: Error and Exception return in HTML with trace
+> FALSE: Error and Exception return in JSON
 
 #Example:
 - Lumen version:
