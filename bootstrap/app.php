@@ -24,6 +24,7 @@ $app = new Laravel\Lumen\Application(
 );
 
 $app->configure('database');
+$app->configure('cors');
 $app->withFacades();
 
 
@@ -82,6 +83,7 @@ $app->singleton(
 $app->register(App\Providers\AppServiceProvider::class);
 $app->register(App\Providers\AppzcoderRoutesCommandServiceProvider::class);
 $app->register(Jenssegers\Mongodb\MongodbServiceProvider::class);
+$app->register(Barryvdh\Cors\LumenServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
 $app->withEloquent();

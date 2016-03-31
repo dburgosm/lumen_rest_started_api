@@ -15,6 +15,12 @@ $app->get('/', function () use ($app) {
     return $app->version();
 });
 
+$app->group(['middleware' => 'cors', 'namespace' => 'App\Http\Controllers'], function () use ($app) {
+    $app->get('/cors', function () use ($app) {
+    	return  $app->version()." - Middleware CORS";
+	});
+});
+
 $app->get('/user', 'UserController@index');
 $app->get('/user/{id}', 'UserController@show');
 $app->post('/user', 'UserController@store');
