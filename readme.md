@@ -1,8 +1,10 @@
 #Lumen API Rest
 
 - Lumen (5.2.6) (Laravel Components 5.2.*)
+- JSONP
 - https://github.com/jenssegers/laravel-mongodb
 - https://github.com/sohelamin/lumen-route-list
+- https://github.com/barryvdh/laravel-cors
 - https://secure.php.net/manual/en/mongodb.installation.php
 
 
