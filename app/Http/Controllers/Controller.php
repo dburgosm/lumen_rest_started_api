@@ -46,6 +46,6 @@ class Controller extends BaseController
 
     protected function buildFailedValidationResponse(Request $request, array $errors)
     {
-        return $this->sendResponse($errors, 422);
+        return $this->sendResponse($requets, $errors, 422);
     }
 }
